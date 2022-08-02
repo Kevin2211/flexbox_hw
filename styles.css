@@ -1,0 +1,206 @@
+
+.container-1{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    background-color: lightgray;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-2{
+    display: flex;
+    height: 300px;
+    width: 900px;
+}
+.red{
+flex: 1;
+background-color: red;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.blue{
+flex: 1;
+background-color: blue;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.yellow{
+flex: 1;
+background-color: yellow;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container-3{
+    display: flex;
+    flex-direction: column;
+
+}
+.row{
+    display: flex
+}
+.cell{
+    background-color: #ffce9e;
+    height: 100px;
+    width: 100px;
+    border: solid;
+}
+.row:nth-child(odd) > .cell:nth-child(even) {
+    background-color: #d18a46;
+  }
+
+.row:nth-child(even) > .cell:nth-child(odd) {
+    background-color: #d18a46;
+  }
+
+.nav-bar{
+    display: flex;
+    background-color: lightskyblue;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-right: 30px;
+    
+}
+li{
+    list-style: none;
+}
+a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.company{
+    margin-left: 30px;
+}
+.nav-bar-item{
+    font-weight: bold;
+    color: white;
+}
+input{
+    border-radius: 0;
+}
+
+.container-4{
+    display: flex;
+    flex-direction: row;
+    border: solid;
+    height: 700px;
+}
+.container-4 *{
+    border: solid;
+}
+
+/* column 1 */
+.column-1{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.column-1 > div:first-child{
+    display: flex;
+    justify-content: row;
+    flex: 3;
+}
+.column-1 > div:first-child > div{
+    flex: 1;
+}
+.column-1 > div:nth-child(n +2){
+    flex: 1;
+}
+
+/* column 2 */
+
+.column-2{
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+}
+.column-2 > div{
+    flex: 1;
+}
+
+.column-2 > div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+}
+.column-2 > div:nth-child(2) > div{
+    flex: 1;
+}
+
+/* column 3 */
+.column-3{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.column-3 div{
+    flex: 2;
+}
+.column-3 > div:nth-child(n+5){
+    flex: 3;
+}
+.column-3 > div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+}
+.column-3 > div:nth-child(3) > div{
+    flex: 1;
+}
+
+/* column 4 */
+.column-4{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.column-4 > div{
+    flex: 2;
+}
+.column-4 > div:nth-child(2){
+    flex: 3;
+}
+.column-4 > div:nth-child(5){
+    flex: 3;
+}
+.column-4 > div:nth-child(2n +4){
+    display: flex;
+    flex-direction: row;
+}
+.column-4 > div:nth-child(2n +4) > div{
+    flex: 1;
+}
+/* column 5 */
+.column-5{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.column-5 div{
+    flex: 1;
+}
+.column-5 div:first-child{
+    display: flex;
+    flex-direction: row;
+}
+.column-5 div:first-child > div{
+    flex: 1;
+}
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.black{
+    background-color: black;
+}
+
